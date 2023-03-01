@@ -43,7 +43,9 @@ your given user name and password
 
 ![cdptenantmarketing](images/cdptenantmarketing.png)
 
-In case of success you should get to this home page of the CDP tenant
+In case of success you should get to this home page of the CDP tenant:
+![cdphomepage](images/cdphomepage.png)
+
 
 ### Initialize the Project
 There are a couple of steps needed at the start to configure the Project and Workspace
@@ -88,6 +90,10 @@ So make sure you run step 0 first.
 
 Open the file `0_bootstrap.py` in a normal workbench python3 session. You only need a
 1 CPU / 2 GB instance. Then **Run > Run All Lines**
+
+Wait until the script has finished (Reminder: there should appear a green bar instead of a red one at the bottom of the session)
+
+## Lab 2: Data Loading and interactive Analysis (20 min)
 
 ### 1 Ingest Data
 This script will read in the data csv from the file uploaded to the object store (s3/adls) setup
