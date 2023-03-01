@@ -46,6 +46,7 @@ your given user name and password
 In case of success you should get to this home page of the CDP tenant:
 ![cdphomepage](images/cdphomepage.png)
 
+< todo: the next steps depend on whether we get the AMP or or a github link >
 
 ### Initialize the Project
 There are a couple of steps needed at the start to configure the Project and Workspace
@@ -100,6 +101,21 @@ This script will read in the data csv from the file uploaded to the object store
 during the bootstrap and create a managed table in Hive. This is all done using Spark.
 
 Open `1_data_ingest.py` in a Workbench session: python3, 1 CPU, 2 GB. Run the file.
+
+Sessions allow you to perform actions such as run R, Scala or Python code. They also provide access to an interactive command prompt and terminal. Sessions will be built on a specified Runtime Image, which is a docker container that is deployed onto the ML Workspace. In addition you can specify how much compute you want the session to use.
+
+- Click on *Overview* in the side panel
+- Click *New Session* in the top right corner
+![startnewsession](images/startnewsession.png)
+Before you start a new session you can give it a name, choose an editor (e.g. JupyterLab), what kernel you’d like to use (e.g. latest Python or R), whether you want to make Spark (and hdfs) libraries be available in your session, and finally the resource profile (CPU, memory, and GPU).
+- Ensure that Spark is enabled
+- Leave all other settings as is and click *start session*
+The Workbench is now starting up and deploying a container onto the workspace at this point. Going from left to right you will see the project files, editor pane, and session pane.
+
+Once you see the flashing red line on the bottom of the session pane turn steady green the container has been successfully started.
+
+You will be greeted with a pop-up window to get you started connecting to pre-populated Data Lake sources (e.g. virtual Data Warehouses). You could simply copy the code snippet provided and easily connect to, say, a Hive vDW. However, in this lab we won’t be using this feature.
+
 
 ### 2 Explore Data
 This is a Jupyter Notebook that does some basic data exploration and visualistaion. It
