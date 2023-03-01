@@ -106,7 +106,9 @@ Sessions allow you to perform actions such as run R, Scala or Python code. They 
 
 - Click on *Overview* in the side panel
 - Click *New Session* in the top right corner
+
 ![startnewsession](images/startnewsession.png)
+
 Before you start a new session you can give it a name, choose an editor (e.g. JupyterLab), what kernel you’d like to use (e.g. latest Python or R), whether you want to make Spark (and hdfs) libraries be available in your session, and finally the resource profile (CPU, memory, and GPU).
 - Ensure that Spark is enabled
 - Leave all other settings as is and click *start session*
